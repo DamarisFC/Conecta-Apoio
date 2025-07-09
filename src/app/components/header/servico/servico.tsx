@@ -1,4 +1,4 @@
-// src/components/Services.tsx
+// consumir api
 import Image from "next/image";
 
 export default function Services() {

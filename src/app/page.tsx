@@ -1,5 +1,6 @@
 //pagina principal 
 
+import Footer from "./components/header/footer/footer"
 import ServiceForm from "./components/header/form/page"
 import Header from "./components/header/header/page"
 import Services from "./components/header/servico/servico"
@@ -14,9 +15,8 @@ export default function Home() {
       <Services></Services>
       <Unidades></Unidades>
       <ServiceForm></ServiceForm>
-      </main>
-
+      <Footer></Footer>
+    </main>
   )
-
 
 }
