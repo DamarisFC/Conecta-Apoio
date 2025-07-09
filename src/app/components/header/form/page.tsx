@@ -1,7 +1,8 @@
 'use client';
-//consumir api
+
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import api from '../../../lib/api';
 
 type FormValues = {
   servico: string;
@@ -20,14 +21,15 @@ export default function ServiceForm() {
   const { register, handleSubmit, formState: { errors } } = useForm<FormValues>();
   const [unidades, setUnidades] = useState<Unidade[]>([]);
   const [loading, setLoading] = useState(false);
+  const [erro, setErro] = useState('');
 
   const fetchUnidades = async (servico: string) => {
     try {
-      const response = await fetch(`/api/servicos/${encodeURIComponent(servico)}`);
-      if (!response.ok) throw new Error('Erro na requisição');
-      return await response.json();
+      const { data } = await api.get(`/servicos/${encodeURIComponent(servico)}`);
+      return data;
     } catch (error) {
       console.error('Erro ao buscar unidades:', error);
+      setErro('Erro ao buscar unidades. Tente novamente mais tarde.');
       throw error;
     }
   };
@@ -35,12 +37,13 @@ export default function ServiceForm() {
   const onSubmit = async (data: FormValues) => {
     setLoading(true);
     setUnidades([]);
+    setErro('');
 
     try {
       const result = await fetchUnidades(data.servico);
       setUnidades(result);
     } catch {
-      // Erro já tratado no console
+      // Erro já tratado acima
     } finally {
       setLoading(false);
     }
@@ -84,6 +87,7 @@ export default function ServiceForm() {
         </form>
 
         {loading && <p className="mt-4 text-gray-700">Carregando...</p>}
+        {erro && <p className="mt-4 text-red-600">{erro}</p>}
 
         {unidades.length > 0 && (
           <div className="mt-6">
