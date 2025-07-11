@@ -15,6 +15,8 @@ type Unidade = {
 const servicosDisponiveis = [
   'Proteção Social Especial para famílias e indivíduos em situação de risco social',
   'Serviço Especializado para Pessoas em Situação de Rua',
+  'Cadastro Único para Programas Sociais',
+
 ];
 
 export default function ServiceForm() {
@@ -50,7 +52,8 @@ export default function ServiceForm() {
   };
 
   return (
-    <section className="flex flex-col items-center justify-between py-8 px-6 bg-white md:px-16">
+    <section className="flex flex-col items-center justify-between py-16 px-6 bg-green-50 md:px-16"
+    id = 'solicitacao'>
       <div className="w-full max-w-2xl">
         <h1 className="text-2xl font-bold text-gray-900 mb-6">Solicitação de Serviço</h1>
 

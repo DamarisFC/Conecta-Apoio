@@ -43,7 +43,8 @@ export default function Unidades() {
   }, []);
 
   return (
-    <section className="py-16 px-6 bg-white">
+    <section className="py-16 px-6 bg-green-50"
+    id = 'unidades'>
       <h2 className="text-3xl font-bold mb-10 text-center text-gray-900">
         Unidades de Atendimento
       </h2>

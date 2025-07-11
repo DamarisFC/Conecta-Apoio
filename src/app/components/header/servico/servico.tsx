@@ -1,65 +1,3 @@
-
-// import Image from "next/image";
-
-// export default function Services() {
-//   const cards = [
-//     {
-//       title: "Cras Vila Maria",
-//       icon: "/img1.png",
-//       bg: "bg-white",
-//     },
-//     {
-//       title: "Estamos em manutenção 2",
-//       icon: "/img1.png",
-//       bg: "bg-black text-white",
-//     },
-//     {
-//       title: "Estamos em manutenção 3",
-//       icon: "/img1.png",
-//       bg: "bg-black text-white",
-//     },
-//     {
-//       title: "Estamos em manutenção 4",
-//       icon: "/img1.png",
-//       bg: "bg-white",
-//     },
-//   ];
-
-//   return (
-//     <section id="servicos" className="py-16 px-6 bg-gray-50">
-//       <h2 className="text-3xl font-bold mb-10 text-center text-gray-800">Serviços</h2>
-//       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-//         {cards.map((card, idx) => (
-//           <div
-//             key={idx}
-//             className={`p-6 rounded-xl shadow-md ${card.bg} transition hover:scale-105`}
-//           >
-//             <div className="flex items-center gap-4">
-//               <Image src={card.icon} alt={card.title} width={40} height={40} />
-//               <h3 className="text-xl font-semibold">{card.title}</h3>
-//             </div>
-//             <p className="mt-4 text-sm text-gray-500">estamos em manutenção</p>
-            
-//             {/* Botão adicionado */}
-//             <button
-//               className={`mt-6 px-4 py-2 rounded ${
-//                 card.bg.includes('black')
-//                   ? 'bg-white text-black hover:bg-gray-200'
-//                   : 'bg-black text-white hover:bg-gray-800'
-//               } transition`}
-//             >
-//               Saiba mais
-//             </button>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
-
-//função para chamar api
-
 'use client';
 
 import Image from "next/image";
@@ -85,25 +23,25 @@ export default function Services() {
   const cards = [
     {
       title: "Cras Vila Maria",
-      icon: "/img1.png",
+      icon: "/img5.png",
       bg: "bg-white",
       id: 1,
     },
     {
       title: "CRAS Vila Medeiros",
-      icon: "/img1.png",
+      icon: "/img6.jpg",
       bg: "bg-black text-white",
       id: 2,
     },
     {
       title: "CREAS Vila Maria",
-      icon: "/img1.png",
+      icon: "/img6.jpg",
       bg: "bg-black text-white",
       id: 3,
     },
     {
       title: "Centro POP Vila Maria",
-      icon: "/img1.png",
+      icon: "/img6.jpg",
       bg: "bg-white",
       id: 4,
     },
