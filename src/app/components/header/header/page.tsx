@@ -5,7 +5,7 @@ export default function Header() {
     <header className="flex flex-col items-center justify-between py-8 px-6 bg-white md:flex-row md:px-16">
       <div className="flex items-center space-x-4">
         <Image src="/img1.png" alt="Logo" width={50} height={50} />
-        <h1 className="text-2xl font-bold text-gray-900">YourAppName</h1>
+        <h1 className="text-2xl font-bold text-gray-900">Conecta Apoio</h1>
       </div>
 
       <nav className="mt-4 md:mt-0">

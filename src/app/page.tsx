@@ -11,10 +11,15 @@ import Unidades from "./components/header/unidade/unidades"
 export default function Home() {
   return (
     <main>
+      <br></br>
       <Header></Header>
-      <Services></Services>
-      <Unidades></Unidades>
+      <br></br>
       <ServiceForm></ServiceForm>
+      <br></br>
+      <Services></Services>
+      <br></br>
+      <Unidades></Unidades>
+      <br></br>
       <Footer></Footer>
     </main>
   )

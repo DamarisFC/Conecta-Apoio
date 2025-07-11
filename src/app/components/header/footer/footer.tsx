@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Ilustração */}
         <div className="flex justify-center items-center">
           <Image
-            src="/img1.png"
+            src="/img2.png"
             alt="Contato"
             width={400}
             height={300}
@@ -31,11 +31,12 @@ export default function Footer() {
         <span className="text-sm">© 2025 ConectaApoio. Todos os direitos reservados.</span>
         <div className="flex space-x-4 mt-2 md:mt-0">
           {/* Exemplos de ícones ou links sociais */}
-          <a href="#" aria-label="Instagram">📸</a>
-          <a href="#" aria-label="Email">✉️</a>
-          <a href="#" aria-label="Telefone">📞</a>
+          <a href="#" aria-label="Instagram"></a>
+          <a href="#" aria-label="Email"></a>
+          <a href="#" aria-label="Telefone"></a>
         </div>
       </div>
     </footer>
   );
 }
+
