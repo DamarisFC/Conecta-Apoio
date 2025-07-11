@@ -13,13 +13,9 @@ export default function Home() {
     <main>
       <br></br>
       <Header></Header>
-      <br></br>
-      <ServiceForm></ServiceForm>
-      <br></br>
+      <ServiceForm></ServiceForm>      
       <Services></Services>
-      <br></br>
       <Unidades></Unidades>
-      <br></br>
       <Footer></Footer>
     </main>
   )
